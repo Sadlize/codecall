@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@import './default-theme.css';
-@import './dark-theme.css';
+@import 'default-theme.css';
+@import 'dark-theme.css';
 
 @plugin 'tailwindcss-animate';
 

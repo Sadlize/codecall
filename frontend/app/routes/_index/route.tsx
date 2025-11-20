@@ -1,5 +1,4 @@
-import { HomepageView } from 'pages/homepage.view';
-import { homepageApi } from 'requests/homepage.fetch';
+import { homepageApi, HomepageView } from 'pages/homepage';
 
 import { type Route } from './+types/route';
 

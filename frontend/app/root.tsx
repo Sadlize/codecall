@@ -1,7 +1,8 @@
 import 'styles/app.css';
 import 'styles/variables.css';
+
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts } from 'react-router';
-import { siteUrl } from 'configs/env';
+import { siteUrl } from 'shared/config/env';
 
 import { type Route } from './+types/root';
 import { Error } from './error';

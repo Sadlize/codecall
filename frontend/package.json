@@ -1,0 +1,40 @@
+{
+  "name": "codecall-frontend",
+  "author": "Alexey Pautov-Brevnov <alexey.pautovbrevnov@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "react-router dev --port=3000",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc --noEmit",
+    "fsd": "steiger ./src"
+  },
+  "dependencies": {
+    "@react-router/fs-routes": "7.9.6",
+    "@react-router/node": "7.9.6",
+    "@react-router/serve": "7.9.6",
+    "isbot": "5.1.32",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@feature-sliced/steiger-plugin": "0.5.7",
+    "@react-router/dev": "7.9.6",
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.6",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.1",
+    "postcss": "8.5.6",
+    "steiger": "0.5.11",
+    "tailwindcss": "4.1.17",
+    "tailwindcss-animate": "1.0.7",
+    "typescript": "5.9.3",
+    "vite": "7.2.4",
+    "vite-tsconfig-paths": "5.1.4"
+  }
+}

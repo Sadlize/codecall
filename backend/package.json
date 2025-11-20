@@ -1,0 +1,13 @@
+{
+  "name": "codecall-backend",
+  "author": "Alexey Pautov-Brevnov <alexey.pautovbrevnov@gmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

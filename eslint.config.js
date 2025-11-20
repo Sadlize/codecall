@@ -4,8 +4,8 @@ const config = [
   ...wizardryConfig,
   {
     ignores: [
-      '**/*', // ignore all files
-      '!{app,src}/**', // unignore folders
+      'frontend/**/*', // ignore all files
+      '!frontend/{app,src}/**', // unignore folders
     ],
   },
 ];
