@@ -42,7 +42,7 @@
       "*": ["./src/*"],
       "@/*": ["./*"]
     },
-    "types": ["vite/client"],
+    "types": ["vite/client", "jest"],
     "rootDirs": [".", "./.react-router/types"]
   },
   "exclude": ["node_modules/**/*", "out/**/*"],

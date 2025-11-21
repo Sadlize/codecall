@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules/**/*", "out/**/*"],
   "include": ["**/**/*.ts", "**/**/*.tsx"]
