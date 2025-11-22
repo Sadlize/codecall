@@ -6,7 +6,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "react-router dev --port=3000",
+    "dev": "react-router dev",
     "build": "react-router build",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc --noEmit",
@@ -28,7 +28,6 @@
     "@types/node": "24.10.1",
     "@types/react": "19.2.6",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "5.1.1",
     "postcss": "8.5.6",
     "steiger": "0.5.11",
     "tailwindcss": "4.1.17",

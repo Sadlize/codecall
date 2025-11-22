@@ -1,8 +1,9 @@
 import 'styles/app.css';
 import 'styles/variables.css';
 
+import { type ReactNode } from 'react';
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts } from 'react-router';
-import { siteUrl } from 'shared/config/env';
+import { SITE_URL } from 'shared/config/env';
 
 import { type Route } from './+types/root';
 import { Error } from './error';
@@ -20,7 +21,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   return <Error />;
 }
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -34,13 +35,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         />
         <meta name="application-name" content="Wizardry" />
         <link rel="manifest" href="/assets/icons/site.webmanifest" />
-        <link rel="canonical" href={siteUrl} />
+        <link rel="canonical" href={SITE_URL} />
         <meta property="og:title" content="Wizardry" />
         <meta
           property="og:description"
           content="Starter template for frontend project based on Next.js framework with app directory"
         />
-        <meta property="og:url" content={siteUrl} />
+        <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="Wizardry" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:image" content="/assets/images/starter-banner.png" />

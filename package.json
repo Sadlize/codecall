@@ -6,12 +6,17 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "cd frontend && npm i && npm run build",
+    "start": "cd backend && npm i && npm run start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write frontend/{app,src}/**/*.{ts,tsx}",
     "test": "jest",
     "commit": "cz",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "dotenv": "17.2.3"
   },
   "devDependencies": {
     "@commitlint/cli": "20.1.0",

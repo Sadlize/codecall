@@ -1,10 +1,21 @@
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import react from '@vitejs/plugin-react';
 import { reactRouter } from '@react-router/dev/vite';
+
+import { APP_PORT, SERVER_PROXY } from '../env';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [tsconfigPaths(), react(), reactRouter()],
+  plugins: [tsconfigPaths(), reactRouter()],
   envPrefix: 'PUBLIC_',
+  envDir: '../',
+  server: {
+    port: APP_PORT,
+    proxy: {
+      '/api': {
+        target: SERVER_PROXY,
+        changeOrigin: true,
+      },
+    },
+  },
 });

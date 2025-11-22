@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "module": "nodenext",
     "strictNullChecks": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true
   },
   "exclude": ["node_modules/**/*", "out/**/*"],
   "include": ["**/**/*.ts", "**/**/*.tsx"]
